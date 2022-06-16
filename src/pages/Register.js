@@ -26,7 +26,7 @@ const Register = () => {
 
 
     const storeData = async (user) => {
-        const { data } = await axios.post('http://localhost:5000/user', user);
+        const { data } = await axios.post('https://rest-countries-1452.herokuapp.com/user', user);
 
         console.log(data);
 

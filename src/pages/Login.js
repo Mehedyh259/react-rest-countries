@@ -24,7 +24,7 @@ const Login = () => {
     const showData = async (user) => {
         console.log("login", user);
         const email = user?.user?.email;
-        const { data } = await axios.get(`http://localhost:5000/user?email=${email}`);
+        const { data } = await axios.get(`https://rest-countries-1452.herokuapp.com/user?email=${email}`);
         setUserData(data.user);
     }
 
